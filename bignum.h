@@ -26,6 +26,7 @@ struct bignum{
             exp+=cnt;
         }
     }
+    
     //printing the bignum
     friend ostream& operator<<(ostream& os, bignum const& n){
         os << setprecision(9) << n.base << (print_mode? "e":" * 10^") << n.exp;
